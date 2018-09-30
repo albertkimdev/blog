@@ -26,3 +26,7 @@
 .mb4 {
   margin-bottom: 4rem;
 }
+
+.link-effect h1:hover {
+  color: #23d160;
+}

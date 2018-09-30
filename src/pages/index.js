@@ -4,9 +4,24 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
+  state = {
+    tag: 'all'
+  }
+
+  updateTag = e => {
+    this.setState({
+      tag: e.target.id
+    })
+  }
+
   printTags = tags => {
     return tags.map((t, i) => (
-      <span key={i} className="tag is-medium is-primary caps">
+      <span
+        key={i}
+        id={t}
+        className="button tag is-medium is-primary caps"
+        onClick={this.updateTag}
+      >
         {t}
       </span>
     ))
@@ -15,75 +30,68 @@ export default class IndexPage extends React.Component {
   TagsSection = tags => (
     <section className="section border-light">
       <h1 className="subtitle">Topics</h1>
-      <div className="tags">{this.printTags(tags)}</div>
+      <div className="tags">{this.printTags(['all', ...tags])}</div>
     </section>
   )
 
-  printArticleCards = articles => {
-    return articles.map((a, i) => (
+  printArticleCards = blogs => {
+    return blogs.map((b, i) => (
       <div className="card mb3" key={i}>
         <div className="card-content">
           <div className="content">
-            <figure className="image">
-              <img src="https://bulma.io/images/placeholders/480x320.png" />
+            <figure className="image is-2by1">
+              <img src={`http://localhost:8000${b.image}`} />
             </figure>
-            <h1 className="title">{a.title}</h1>
-            <p>{a.description}</p>
-            {a.tags.map((tag, index) => (
-              <span key={index}>{tag} </span>
-            ))}
+            <Link className="link-effect" to={b.slug}>
+              <h1 className="title">{b.title}</h1>
+            </Link>
+            <p>{b.description}</p>
+            <div className="tags">
+              {b.tags.map((tag, index) => (
+                <span className="tag is-primary caps" key={index}>
+                  <Link to={`/tags/${tag}`}>{tag}</Link>
+                </span>
+              ))}
+            </div>
+            <Link className="button is-small" to={b.slug}>
+              Keep Reading →
+            </Link>
           </div>
         </div>
       </div>
     ))
   }
 
-  ArticleCards = () => (
+  ArticleCards = blogs => (
     <section className="section notoppadding">
-      {this.printArticleCards([
-        {
-          title: 'hello whence is the last supper',
-          description: 'this is a description',
-          tags: ['web dev', 'server side', 'rendering']
-        },
-        {
-          title: 'How to make a website',
-          description: 'lorem10 lorem 10 aklsdjflsaf',
-          tags: ['web dev', 'server side', 'rendering']
-        },
-        {
-          title: 'When will the earth end',
-          description: 'this is a descriptsdfdsfsddsfsdfion',
-          tags: ['web dev', 'server side', 'rendering']
-        },
-        {
-          title: 'hello how are u',
-          description: 'this is a sdfsd fsdf sd sdf sdf description',
-          tags: ['web dev', 'server side', 'rendering']
-        },
-        {
-          title: 'What is up mine guy?',
-          description: 'this is a description okkkkkkk',
-          tags: ['web dev', 'server side', 'rendering']
-        },
-        {
-          title: 'Okurr okurr okru jaja',
-          description: 'this is a good description',
-          tags: ['web dev', 'server side', 'rendering']
-        }
-      ])}
+      {this.printArticleCards(blogs)}
     </section>
   )
 
   render() {
+    const tag = this.state.tag
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
     const tags = [].concat.apply(
       [],
       posts.map(({ node: post }) => [...post.frontmatter.tags])
     )
-
-    console.log(posts)
+    const blogs = posts
+      .filter(({ node: post }) => {
+        if (tag === 'all') return true
+        let check = false
+        post.frontmatter.tags.forEach(t => {
+          if (t.toLowerCase() === tag) check = true
+        })
+        return check
+      })
+      .map(({ node: post }) => ({
+        title: post.frontmatter.title,
+        image: post.frontmatter.image,
+        tags: post.frontmatter.tags,
+        description: post.frontmatter.description,
+        slug: post.fields.slug
+      }))
 
     return (
       <Layout>
@@ -93,32 +101,8 @@ export default class IndexPage extends React.Component {
               <div className="column is-one-quarter">
                 {this.TagsSection(tags)}
               </div>
-              <div className="column">{this.ArticleCards()}</div>
+              <div className="column">{this.ArticleCards(blogs)}</div>
             </div>
-
-            {posts.map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                key={post.id}
-              >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
           </div>
         </section>
       </Layout>
