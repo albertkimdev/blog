@@ -8,8 +8,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
+    <section className="section section--gradient has-background-grey">
+      <div className="container has-background-light">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
@@ -28,7 +28,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  contentComponent: PropTypes.func
 }
 
 const AboutPage = ({ data }) => {
@@ -46,7 +46,7 @@ const AboutPage = ({ data }) => {
 }
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 }
 
 export default AboutPage

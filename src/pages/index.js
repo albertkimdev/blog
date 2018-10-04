@@ -28,7 +28,7 @@ export default class IndexPage extends React.Component {
   }
 
   TagsSection = tags => (
-    <section className="section border-light">
+    <section className="section border-light has-background-white">
       <h1 className="subtitle">Topics</h1>
       <div className="tags">{this.printTags(['all', ...tags])}</div>
     </section>
@@ -39,9 +39,11 @@ export default class IndexPage extends React.Component {
       <div className="card mb3" key={i}>
         <div className="card-content">
           <div className="content">
-            <figure className="image is-2by1">
-              <img src={`http://localhost:8000${b.image}`} />
-            </figure>
+            <Link to={b.slug}>
+              <figure className="image is-2by1 mb2">
+                <img src={`http://localhost:8000${b.image}`} />
+              </figure>
+            </Link>
             <Link className="link-effect" to={b.slug}>
               <h1 className="title">{b.title}</h1>
             </Link>
@@ -49,7 +51,9 @@ export default class IndexPage extends React.Component {
             <div className="tags">
               {b.tags.map((tag, index) => (
                 <span className="tag is-primary caps" key={index}>
-                  <Link to={`/tags/${tag}`}>{tag}</Link>
+                  <Link className="has-text-white" to={`/tags/${tag}`}>
+                    {tag}
+                  </Link>
                 </span>
               ))}
             </div>
@@ -95,7 +99,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="section has-background-light">
           <div className="container">
             <div className="columns">
               <div className="column is-one-quarter">

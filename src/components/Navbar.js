@@ -6,7 +6,13 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <h1 className="title has-text-success">Yongelee</h1>
+          <h1 className="title has-text-primary">
+            Yongelee{' '}
+            <span className="is-size-5">
+              {' '}
+              - My blog about UI/UX, startups, coding, & more
+            </span>
+          </h1>
         </Link>
       </div>
       <div className="navbar-end">
