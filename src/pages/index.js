@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import { kebabCase } from 'lodash'
 import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
@@ -18,11 +19,11 @@ export default class IndexPage extends React.Component {
     return tags.map((t, i) => (
       <span
         key={i}
-        id={t}
+        id={t[0]}
         className="button tag is-medium is-primary caps"
         onClick={this.updateTag}
       >
-        {t}
+        {`${t[0]} ${t[1] === 0 ? '' : t[1]}`}
       </span>
     ))
   }
@@ -30,7 +31,7 @@ export default class IndexPage extends React.Component {
   TagsSection = tags => (
     <section className="section border-light has-background-white">
       <h1 className="subtitle">Topics</h1>
-      <div className="tags">{this.printTags(['all', ...tags])}</div>
+      <div className="tags">{this.printTags(tags)}</div>
     </section>
   )
 
@@ -51,7 +52,10 @@ export default class IndexPage extends React.Component {
             <div className="tags">
               {b.tags.map((tag, index) => (
                 <span className="tag is-primary caps" key={index}>
-                  <Link className="has-text-white" to={`/tags/${tag}`}>
+                  <Link
+                    className="has-text-white"
+                    to={`/tags/${kebabCase(tag)}`}
+                  >
                     {tag}
                   </Link>
                 </span>
@@ -80,6 +84,14 @@ export default class IndexPage extends React.Component {
       [],
       posts.map(({ node: post }) => [...post.frontmatter.tags])
     )
+    let counts = {}
+    counts.all = 0
+    for (var i = 0; i < tags.length; i++) {
+      counts[tags[i]] = 1 + (counts[tags[i]] || 0)
+    }
+
+    counts = Object.entries(counts)
+
     const blogs = posts
       .filter(({ node: post }) => {
         if (tag === 'all') return true
@@ -103,7 +115,7 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="columns">
               <div className="column is-one-quarter">
-                {this.TagsSection(tags)}
+                {this.TagsSection(counts)}
               </div>
               <div className="column">{this.ArticleCards(blogs)}</div>
             </div>

@@ -50,8 +50,7 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet)
+  title: PropTypes.string
 }
 
 const BlogPost = ({ data }) => {
