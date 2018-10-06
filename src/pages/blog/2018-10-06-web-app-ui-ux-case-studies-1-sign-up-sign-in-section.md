@@ -13,9 +13,7 @@ tags:
   - case studies
   - educational
 ---
-
-
-askjThis article will look at 4 different web apps that I am a personal fan of.
+This article will look at 4 different web apps that I am a personal fan of.
 
 [NomadList.com](https://nomadlist.com/), [ProductHunt.com](https://www.producthunt.com/), [IndieHackers.com](https://www.indiehackers.com/), [Carrd.co](https://carrd.co/) are all web apps whose founders are active on Twitter and in the indie hacking community and I will be examining their UI/UX.
 
@@ -33,13 +31,13 @@ Let’s begin by examining one of my favourite digital products: NomadList.com
 
 #### Landing Page
 
-![NomadList.com landing page](/img/nomadlist-landing-page-signup-buttons.png)
-
 _Desktop view_
 
-![NomadList.com landing page mobile view](/img/nomadlist-mobile-landing-page.png)
+![NomadList.com landing page](/img/nomadlist-landing-page-signup-buttons.png)
 
 _Mobile view_
+
+![NomadList.com landing page mobile view](/img/nomadlist-mobile-landing-page.png)
 
 On the desktop landing page you see a navigation bar and on the right side there are two buttons, login and sign up.
 
@@ -82,3 +80,23 @@ I thought that was quite funny.
 That was NomadList.com sign up/sign in UI/UX in a nutshell. There are buttons which open up pop up modals which allow for further functionality like registration or logging in.
 
 Next up is IndieHackers.com!
+
+## Indie Hackers
+
+### Landing Page
+
+_Desktop_
+
+![indiehackers.com landing page](/img/indiehackers-landing-page.png)
+
+_Mobile_
+
+![indiehackers.com mobile landing page](/img/indiehackers-mobile-landing.png)
+
+When you land on IndieHackers.com you are greeted with their message board. 
+
+You also see a navigation menu at the top where you would expect it to be. On the right side of the navigation you see two buttons, one for Log In and one for Sign Up.
+
+You also see another section for joining the community on the left side. 
+
+The mobile landing page has the buttons to register or log in more visible than the desktop version. This is simply because of the position the buttons take in the layout. This was probably by design from Courtland Allen, the creator of Indie Hackers.
