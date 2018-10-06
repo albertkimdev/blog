@@ -42,7 +42,7 @@ export default class IndexPage extends React.Component {
           <div className="content">
             <Link to={b.slug}>
               <figure className="image is-2by1 mb2">
-                <img src={`${window.location.href.slice(0, -1)}${b.image}`} />
+                <img src={`${this.props.location.origin}${b.image}`} />
               </figure>
             </Link>
             <Link className="link-effect" to={b.slug}>
