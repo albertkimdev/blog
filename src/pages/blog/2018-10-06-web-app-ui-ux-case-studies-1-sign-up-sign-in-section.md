@@ -9,7 +9,7 @@ description: >-
   implemented their UI/UX, we will be better able to create our own web apps and
   UI/UX.
 tags:
-  - UI/UX
+  - UI UX
   - case studies
   - educational
 ---
