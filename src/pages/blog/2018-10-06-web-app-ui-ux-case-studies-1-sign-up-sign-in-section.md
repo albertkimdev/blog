@@ -15,9 +15,7 @@ tags:
 ---
 
 
-
-
-This article will look at 4 different web apps that I am a personal fan of.
+askjThis article will look at 4 different web apps that I am a personal fan of.
 
 [NomadList.com](https://nomadlist.com/), [ProductHunt.com](https://www.producthunt.com/), [IndieHackers.com](https://www.indiehackers.com/), [Carrd.co](https://carrd.co/) are all web apps whose founders are active on Twitter and in the indie hacking community and I will be examining their UI/UX.
 
@@ -43,4 +41,44 @@ _Desktop view_
 
 _Mobile view_
 
-On the landing page.
+On the desktop landing page you see a navigation bar and on the right side there are two buttons, login and sign up.
+
+In the mobile landing page, you have to press the logo in the top left corner to open the side navigation. 
+
+In both desktop and mobile, there are 2 total destinations: Login and Sign up.
+
+### Sign In
+
+![nomadlist.com sign in screen](/img/nomadlist-signin.png)
+
+When you click “Login” NomadList opens a full screen graphic with some options to login with Facebook, Twitter or Email. 
+
+It also does not take you to a new route like nomadlist.com/signin, it just opens a full screen section with their login options.
+
+The mobile view is pretty much the same, just with the buttons stacked vertically rather than horizontally.
+
+### Sign up
+
+![nomadlist.com sign up screen](/img/nomadlist-signup.png)
+
+This is the sign up component for NomadList.
+
+Once again, there is no new route like nomadlist.com/signup, it’s just a pop up modal with some information about benefits of signing up and a form to enter your credit card to continue.
+
+This is one of the most confident sign up modals on the internet probably.
+
+Rather than making it easy to continue, Pieter Levels has decided to make it hard. 
+
+Most indie hackers or web app creators will have their sign up section like:
+
+> \~\~^_^;;v heeeyyy may you pureeettty plss sign up for my vurrry pretttty website master?? Its fwreee fwree for you forever!! If you sign up now ill paypal you $5!!\~\~
+
+VS Nomad List which is like:
+
+> Enter your credit card information to continue.
+
+I thought that was quite funny.
+
+That was NomadList.com sign up/sign in UI/UX in a nutshell. There are buttons which open up pop up modals which allow for further functionality like registration or logging in.
+
+Next up is IndieHackers.com!
