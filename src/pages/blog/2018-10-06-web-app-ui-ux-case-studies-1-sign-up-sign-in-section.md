@@ -13,9 +13,15 @@ tags:
   - case studies
   - educational
 ---
-This article will look at 5 different web apps created by independent founders or better known as “Indie Hackers.” 
 
-We will be examining the sign up/sign in section of a web app. This section or component of a web app is crucial as it is how a person can become a user of your web app. 
+
+
+
+This article will look at 4 different web apps that I am a personal fan of.
+
+[NomadList.com](https://nomadlist.com/), [ProductHunt.com](https://www.producthunt.com/), [IndieHackers.com](https://www.indiehackers.com/), [Carrd.co](https://carrd.co/) are all web apps whose founders are active on Twitter and in the indie hacking community and I will be examining their UI/UX.
+
+We will be examining the sign up/sign in section of these web apps. This section or component of a web app is crucial as it is how a person can become a user of your web app. 
 
 If you are making a digital product that has user specific functionality then nailing the user sign up or registration UI/UX is crucial.
 
@@ -24,3 +30,17 @@ How should you make a sign up / sign in component? Should you create a new page 
 Rather than answering these kinds of questions with opinions and statements, let’s look at examples of successful web apps with real paying users. 
 
 Let’s begin by examining one of my favourite digital products: NomadList.com
+
+## Nomad List
+
+#### Landing Page
+
+![NomadList.com landing page](/img/nomadlist-landing-page-signup-buttons.png)
+
+_Desktop view_
+
+![NomadList.com landing page mobile view](/img/nomadlist-mobile-landing-page.png)
+
+_Mobile view_
+
+On the landing page.
