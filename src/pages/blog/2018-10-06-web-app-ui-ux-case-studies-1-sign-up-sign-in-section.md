@@ -3,7 +3,7 @@ templateKey: blog-post
 title: >-
   UI/UX case studies #1: Sign up / Sign in section of NomadList.com,
   ProductHunt.com, and IndieHackers.com
-date: 2018-10-06T19:39:56.507Z
+date: 2018-10-20T19:39:56.507Z
 image: /img/jumbotron.jpg
 description: >-
   In this article series I will be dissecting and examining UI/UX components of
