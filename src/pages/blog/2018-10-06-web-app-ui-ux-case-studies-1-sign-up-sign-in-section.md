@@ -4,7 +4,7 @@ title: 'Web app UI/UX case studies #1: Sign up / Sign in section'
 date: 2018-10-06T19:39:56.507Z
 image: /img/jumbotron.jpg
 description: >-
-  In this article series we will be dissecting and examining UI/UX components of
+  In this article series I will be dissecting and examining UI/UX components of
   web app start-ups. By examining how other developers and designers have
   implemented their UI/UX, we will be better able to create our own web apps and
   UI/UX.
@@ -13,9 +13,9 @@ tags:
   - case studies
   - educational
 ---
-This article will look at 4 different web apps that I am a personal fan of.
+This article will look at 3 different web apps that I am a fan of.
 
-[NomadList.com](https://nomadlist.com/), [ProductHunt.com](https://www.producthunt.com/), [IndieHackers.com](https://www.indiehackers.com/), [Carrd.co](https://carrd.co/) are all web apps whose founders are active on Twitter and in the indie hacking community and I will be examining their UI/UX.
+[NomadList.com](https://nomadlist.com/), [ProductHunt.com](https://www.producthunt.com/), and [IndieHackers.com](https://www.indiehackers.com/) are all web apps whose founders are active on Twitter and in the indie hacking community and I will be examining their UI/UX.
 
 We will be examining the sign up/sign in section of these web apps. This section or component of a web app is crucial as it is how a person can become a user of your web app. 
 
@@ -29,7 +29,7 @@ Let’s begin by examining one of my favourite digital products: NomadList.com
 
 ## Nomad List
 
-#### Landing Page
+### Landing Page
 
 _Desktop view_
 
@@ -100,3 +100,63 @@ You also see a navigation menu at the top where you would expect it to be. On th
 You also see another section for joining the community on the left side. 
 
 The mobile landing page has the buttons to register or log in more visible than the desktop version. This is simply because of the position the buttons take in the layout. This was probably by design from Courtland Allen, the creator of Indie Hackers.
+
+### Clicking Join Us
+
+![null](/img/indiehackers-joinus.png)
+
+When you click “join us” this full screen overlay appears.
+
+It’s interesting because it’s different than the “sign up” button. Maybe Courtland is trying to test which section generates the most user registrations?
+
+### Clicking Sign up
+
+![null](/img/indiehackers-signup.png)
+
+This is the overlay that appears when you click “Sign up”
+
+Two different UI/UX components for registering a new user.
+
+### Sign In Component
+
+![null](/img/indiehackers-signin.png)
+
+When you click the sign in button this modal appears. 
+
+Once again, this web app does not have new pages or routes for user sign in/sign up functionality. Full screen modal type overlays are used for this functionality.
+
+
+
+## Product Hunt
+
+Next up is Product Hunt, one of the premiere destinations for finding digital products. 
+
+![](/img/producthunt-landing-desktop.png)
+
+The desktop landing page of Product Hunt is a little similar to Indie Hackers (or is it the other way around?).
+
+You see a navigation menu at the top and a section before the content with another button to sign up.
+
+There are 3 total buttons, and 2 of them are Sign Up options, one is a Log In. The button colours are different.
+
+![](/img/producthunt-landing-mobile.png)
+
+On the mobile landing page, it’s similar to Indie Hackers again. You see buttons to log in and sign up in the top right corner, and a section before the content trying to convince you to sign up.
+
+### Product Hunt Sign Up / Sign In Modal
+
+![](/img/producthunt-modal.png)
+
+
+
+When you click any of the 3 buttons to sign up or sign in, you are shown this pop up modal. 
+
+The top right navigation buttons to sign in and sign up have a new route as producthunt.com/login for both buttons. It doesn’t take you to a new page, it just opens up this modal that allows you to log in or sign up using Oauth options with Facebook, Twitter, Google, or AngelList.
+
+I really like this functionality and have implemented this style in my own website.
+
+There are 3 paths (the 3 buttons on the landing page) that lead to 1 destination, this pop up modal for signing up and singing in.
+
+When you go to producthunt.com/login, it shows this modal with a white background.
+
+##
