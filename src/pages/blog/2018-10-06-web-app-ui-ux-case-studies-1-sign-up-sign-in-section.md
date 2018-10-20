@@ -12,6 +12,10 @@ tags:
   - UI UX
   - case studies
   - educational
+  - nomadlist
+  - indiehackers
+  - producthunt
+  - web design
 ---
 This article will look at 3 different web apps that I am a fan of.
 
@@ -75,7 +79,7 @@ VS Nomad List which is like:
 
 > Enter your credit card information to continue.
 
-I thought that was quite funny.
+The difference is apparent.
 
 That was NomadList.com sign up/sign in UI/UX in a nutshell. There are buttons which open up pop up modals which allow for further functionality like registration or logging in.
 
@@ -125,13 +129,11 @@ When you click the sign in button this modal appears.
 
 Once again, this web app does not have new pages or routes for user sign in/sign up functionality. Full screen modal type overlays are used for this functionality.
 
-
-
 ## Product Hunt
 
 Next up is Product Hunt, one of the premiere destinations for finding digital products. 
 
-![](/img/producthunt-landing-desktop.png)
+![null](/img/producthunt-landing-desktop.png)
 
 The desktop landing page of Product Hunt is a little similar to Indie Hackers (or is it the other way around?).
 
@@ -139,15 +141,13 @@ You see a navigation menu at the top and a section before the content with anoth
 
 There are 3 total buttons, and 2 of them are Sign Up options, one is a Log In. The button colours are different.
 
-![](/img/producthunt-landing-mobile.png)
+![null](/img/producthunt-landing-mobile.png)
 
 On the mobile landing page, it’s similar to Indie Hackers again. You see buttons to log in and sign up in the top right corner, and a section before the content trying to convince you to sign up.
 
 ### Product Hunt Sign Up / Sign In Modal
 
-![](/img/producthunt-modal.png)
-
-
+![null](/img/producthunt-modal.png)
 
 When you click any of the 3 buttons to sign up or sign in, you are shown this pop up modal. 
 
@@ -159,4 +159,10 @@ There are 3 paths (the 3 buttons on the landing page) that lead to 1 destination
 
 When you go to producthunt.com/login, it shows this modal with a white background.
 
-##
+## Conclusion
+
+In the end, I chose to copy ProductHunt's log in modal. I like the simplicity and the versatility. Rather than making a new page and different routes for logging in or registering, there is just 1 pop up modal that allows you to create an account or log in all the same using Oauth.
+
+There you have it folks, an analysis of the sign in / sign up / registration / log in components of three different web apps.
+
+I hope you learned something and if you like what you read, hit me up on twitter [@yongelee_](https://twitter.com/yongelee_) and I'll respond!
