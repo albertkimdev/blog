@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
-title: 'Web app UI/UX case studies #1: Sign up / Sign in section'
+title: >-
+  UI/UX case studies #1: Sign up / Sign in section of NomadList.com,
+  ProductHunt.com, and IndieHackers.com
 date: 2018-10-06T19:39:56.507Z
 image: /img/jumbotron.jpg
 description: >-
