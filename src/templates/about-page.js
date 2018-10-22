@@ -8,7 +8,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient has-background-grey">
+    <section className="section has-background-grey mobile-bg-blog">
       <div className="container has-background-light">
         <div className="columns">
           <div className="column is-10 is-offset-1">

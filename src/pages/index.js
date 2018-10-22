@@ -46,7 +46,9 @@ export default class IndexPage extends React.Component {
               </figure>
             </Link>
             <Link className="link-effect" to={b.slug}>
-              <h1 className="title">{b.title}</h1>
+              <h1 className="title is-size-5-mobile line-height-title has-text-weight-light">
+                {b.title}
+              </h1>
             </Link>
             <p>{b.description}</p>
             <div className="tags">
@@ -71,7 +73,7 @@ export default class IndexPage extends React.Component {
   }
 
   ArticleCards = blogs => (
-    <section className="section notoppadding">
+    <section className="section nopadding">
       {this.printArticleCards(blogs)}
     </section>
   )
@@ -97,7 +99,7 @@ export default class IndexPage extends React.Component {
         if (tag === 'all') return true
         let check = false
         post.frontmatter.tags.forEach(t => {
-          if (t.toLowerCase() === tag) check = true
+          if (t.toLowerCase() === tag.toLowerCase()) check = true
         })
         return check
       })

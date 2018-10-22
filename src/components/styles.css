@@ -11,6 +11,14 @@
   padding-top: 0;
 }
 
+.nopadding {
+  padding: 0;
+}
+
+.line-height-title {
+  line-height: 1.5 !important;
+}
+
 .mb1 {
   margin-bottom: 1rem;
 }
@@ -29,4 +37,16 @@
 
 .link-effect h1:hover {
   color: #23d160;
+}
+
+.center-it {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .mobile-bg-blog {
+    padding: 1rem 0.75rem;
+    background: whitesmoke !important;
+  }
 }
