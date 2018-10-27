@@ -9,7 +9,7 @@ const NotFoundPage = () => (
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      marginTop: 300
+      marginTop: 100
     }}
   >
     <h1>This page was not found.</h1>
