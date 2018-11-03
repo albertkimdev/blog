@@ -76,7 +76,7 @@ I wanted to learn how to create real web applications using modern technologies 
 
 I also desperately wanted to understand user authentication so I could create user based applications instead of just creating shallow web apps that don’t have login systems.
 
-I have been looking for those types of courses for years and never found anything of high quality. Even Wes Bos’s course for advanced Node didn’t cover true user authentication (it was fake user authentication but his newest advanced react course covered real authentication).
+I have been looking for those types of courses for years and never found anything of high quality.
 
 Ben Awad came out of nowhere and showed me the light. 
 
