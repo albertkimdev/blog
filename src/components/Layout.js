@@ -4,6 +4,9 @@ import Helmet from 'react-helmet'
 import favicon from '../img/favicon.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+
+import 'normalize.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import './all.sass'
 import './styles.css'
 
@@ -21,7 +24,7 @@ const TemplateWrapper = ({ children }) => (
     </Helmet>
     <Navbar />
     <div>{children}</div>
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
 
