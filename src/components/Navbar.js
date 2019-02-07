@@ -37,13 +37,16 @@ const Navbar = () => (
       </div>
       <div className="navbar-end center-it">
         <Link className="navbar-item" to="/">
-          Posts
+          Articles
         </Link>
         <Link className="navbar-item" to="/about">
           About
         </Link>
         <Link className="navbar-item" to="/work">
           Work
+        </Link>
+        <Link className="navbar-item" to="/contact">
+          Contact
         </Link>
       </div>
     </div>

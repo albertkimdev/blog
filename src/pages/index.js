@@ -148,13 +148,43 @@ export default class IndexPage extends React.Component {
               <div className="column is-6">
                 <div className="about-background">
                   <p className="subtitle has-text-white">
-                    Self employed full stack web developer. I specialize in
+                    Developer of{" "}
+                    <em>
+                      <b>software and business</b>
+                    </em>
+                    . Coming up with business ideas and leads for{" "}
+                    <a
+                      className="has-text-warning"
+                      href="https://crowdforge.io"
+                      target="_blank"
+                    >
+                      CrowdForge.io
+                    </a>{" "}
+                    and{" "}
+                    <a
+                      className="has-text-warning"
+                      href="https://ncnetwork.ca"
+                      target="_blank"
+                    >
+                      NCNetwork.ca
+                    </a>
+                    . Self employed web developer creating web apps with React
+                    and Node. Check out my work
+                    <Link to="/work" className="has-text-warning">
+                      <span>{` here`}</span>
+                    </Link>
+                    , contact{" "}
+                    <Link to="/contact" className="has-text-warning">
+                      <span>{` here `}</span>
+                    </Link>
+                    or continue below to read about what I have to say!
+                    {/* Self employed full stack web developer. I specialize in
                     <span className="has-text-grey">React</span> front-ends.
                     Node.js servers and APIS. Graphql to do handle data.
                     Gatsby.js and Next.js to build front-ends. - CrowdForge.io
                     partner that does business development. - Check out my
                     portfolio to look at my work. - Look below to see my
-                    articles.
+                    articles. */}
                   </p>
                 </div>
               </div>
