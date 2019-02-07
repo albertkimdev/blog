@@ -278,12 +278,5 @@ export const pageQuery = graphql`
         }
       }
     }
-    file(relativePath: { eq: "/static/img/bg2.png" }) {
-      childImageSharp {
-        fixed(width: 125, height: 125) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
   }
 `;
