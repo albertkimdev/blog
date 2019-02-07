@@ -2,11 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 
 class Contact extends React.Component {
-  onSubmit = e => {
-    e.preventDefault();
-    console.log("submitted");
-  };
-
   render() {
     return (
       <Layout>

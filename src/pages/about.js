@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-class Work extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <Layout>
@@ -9,7 +9,7 @@ class Work extends React.Component {
           <div className="container">
             <div className="columns">
               <div className="column">
-                <h2 className="title">Work</h2>
+                <h2 className="title">About</h2>
               </div>
             </div>
           </div>
@@ -19,4 +19,4 @@ class Work extends React.Component {
   }
 }
 
-export default Work;
+export default About;
