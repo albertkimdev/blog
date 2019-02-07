@@ -21,23 +21,7 @@ class Contact extends React.Component {
             </div>
             <div className="columns">
               <div className="column">
-                <form onSubmit={this.handleSubmit}>
-                  <p className="subtitle">You want to contact me about:</p>
-                  <div class="control">
-                    <label class="radio">
-                      <input type="radio" name="answer" />
-                      Job opportunity
-                    </label>
-                    <label class="radio">
-                      <input type="radio" name="answer" />I like the cut of your
-                      jib.
-                    </label>
-                    <label class="radio">
-                      <input type="radio" name="answer" />
-                      To say hi. (???)
-                    </label>
-                  </div>
-                </form>
+                <p className="subtitle">Email: yongelee@yongelee.com</p>
               </div>
             </div>
           </div>
