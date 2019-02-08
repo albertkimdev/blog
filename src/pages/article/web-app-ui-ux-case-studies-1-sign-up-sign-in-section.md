@@ -11,12 +11,6 @@ description: >-
   implemented their UI/UX, we will be better able to create our own web apps and
   UI/UX.
 tags:
-  - UI UX
-  - case studies
-  - educational
-  - nomadlist
-  - indiehackers
-  - producthunt
   - web design
 ---
 This article will look at 3 different web apps that I am a fan of.
