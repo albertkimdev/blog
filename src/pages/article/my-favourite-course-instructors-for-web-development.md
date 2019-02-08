@@ -18,9 +18,6 @@ description: >
   an endorsement of their courses.
 tags:
   - web dev
-  - courses
-  - learning
-  - education
 ---
 ### 3. Stephen Grider
 
