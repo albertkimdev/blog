@@ -1,12 +1,11 @@
 ---
 templateKey: article-post
 title: >-
-  A Regular Guy's Story About Chiang Mai Part 1. I went to Chiang Mai in July
-  2016 and finally decided to finish writing about my trip. Here is part 1 where
-  I talk about my reasons for going, my stressful journey flying through China
-  and my first night in Chiang Mai. 
+  I went to Chiang Mai in July 2016 and finally finished writing about my trip.
+  Here is part 1 where I talk about my reasons for going, my stressful journey
+  flying through China and my first night in Chiang Mai. 
 date: 2019-02-08T02:05:32.779Z
-image: /img/chiangmaipart1.png
+image: /img/regular-guy-chiang-mai-part-1.png
 description: >-
   Originally posted in March 2017 on reddit.com/r/digitalnomad:
   https://old.reddit.com/r/digitalnomad/comments/5xbuwx/a_regular_guys_story_about_chiang_mai_part_1_i/
