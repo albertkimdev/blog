@@ -1,8 +1,10 @@
 ---
 templateKey: blog-post
-title: 'I went to Chiang Mai in July 2016 and finally finished writing about my trip. '
+title: >-
+  CHIANG MAI PT 1: Surviving a stressful first flight through China and my first
+  night in Chiang Mai
 date: 2019-02-08T02:35:22.843Z
-image: /img/regular-guy-chiang-mai-part-1-1-.png
+image: /img/regular-guy-chiang-mai-part-1-2-.png
 description: >-
   Originally posted in March 2017 and I wrote about my first solo trip around
   the world and I was a huge noob but people have said they enjoyed my story! -
